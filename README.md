@@ -54,4 +54,8 @@ At this stage you can edit the labels to match the questions in your form
 {"question": "Q_03", "subquestion": "a", "question_type": "select_multiple", "centroid_x": 494, "centroid_y": 408, "area": 138524, "contour": [[401, 222], [272, 331], [272, 487], [402, 596], [590, 595], [718, 487], [718, 331], [589, 222]]}
 ]
 ```
-```
+
+## Run test_boxes.py on a folder of completed forms
+
+
+
