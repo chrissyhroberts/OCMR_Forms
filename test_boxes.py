@@ -52,23 +52,45 @@ def draw_boxes(image, checkboxes, threshold_results):
         cv2.putText(image, label_text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
         cv2.putText(image, threshold_result_text, (x, y + 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
                        
-def process_image(image_path, template, output_dir, global_threshold):
+def process_image(image_path, template, output_dir, threshold):
     image_name = os.path.basename(image_path)
     image = cv2.imread(image_path)
-    checkboxes = template
-    threshold_results = [result["filled"] for result in assess_filled(image, checkboxes, global_threshold)]
 
-    # Create a list of dictionaries containing label, intensity, and threshold_result
+    # Adjust the template to fit the expected structure, and include subquestion and question_type
+    checkboxes = []
+    for item in template:
+        contour = item["contour"]
+        label = item["question"]  # Use the "question" field as the label
+        subquestion = item["subquestion"]
+        question_type = item["question_type"]
+        checkboxes.append({
+            "contour": contour, 
+            "label": label,
+            "subquestion": subquestion,
+            "question_type": question_type
+        })
+
+    threshold_results = [result["filled"] for result in assess_filled(image, checkboxes, threshold)]
+
+    # Compile results including label, intensity, subquestion, question_type, threshold_result, and used threshold
     results = []
     for checkbox, threshold_result in zip(checkboxes, threshold_results):
-        label = checkbox["label"]
-        intensity = checkbox["intensity"]
-        results.append({"label": label, "intensity": intensity, "threshold_result": threshold_result})
+        results.append({
+            "question": checkbox["label"], 
+            "subquestion": checkbox["subquestion"],
+            "question_type": checkbox["question_type"],
+            "threshold_result": threshold_result,
+            "intensity": checkbox.get("intensity", 0),  # Use 0 if 'intensity' key doesn't exist
+            "used_threshold": threshold  # Include the used threshold value
 
-    draw_boxes(image, checkboxes, threshold_results)  # Pass threshold_results
+
+        })
+
+    draw_boxes(image, checkboxes, threshold_results)
     annotated_image_path = os.path.join(output_dir, f"annotated_{image_name}")
     cv2.imwrite(annotated_image_path, image)
     return image_name, results
+
 
 def main():
     parser = argparse.ArgumentParser(description='Batch process images with a template.')
@@ -83,6 +105,10 @@ def main():
 
     # Dictionary to store results for all images
     all_results = {}
+
+    # Ensure the output directory exists
+    if not os.path.exists(args.output_folder):
+        os.makedirs(args.output_folder)
 
     # Process each image
     for image_name in os.listdir(args.input_folder):
