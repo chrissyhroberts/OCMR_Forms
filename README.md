@@ -88,7 +88,53 @@ You might also want to go over any faint marks on the originals with a bingo mar
 
 ![annotated_test_10](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/6c9c152d-5f27-417c-b198-5bc3b9fa2ec8)
 
+Results saved to `all_results.json`
 
+```
+{
+    "test_10_annotated.png": [
+        {
+            "question": "Q_1",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 145.8055777650866,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 211.12559139784946,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 173.11989655172414,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 241.27943121693124,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_3",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 249.0724235645041,
+            "used_threshold": 180.0
+        }
+    ]
+```
 
 
 
