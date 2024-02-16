@@ -56,6 +56,10 @@ At this stage you can edit the labels to match the questions in your form
 ```
 
 ## Run test_boxes.py on a folder of completed forms
+python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 180
+
+## Run gmm_threshold.py on a folder of completed forms
+python3 gmm_threshold.py -i 03_boxes_checked/all_results.json -o form_a_gmm
 
 
 
