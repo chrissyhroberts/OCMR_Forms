@@ -1,5 +1,6 @@
 # OCMR_Forms
 
+
 ## Run cropandwarp.py on contents of input folder
 * Detects the outer bounding box (frame) 
 * Crops image to the outer bounding box
@@ -7,6 +8,12 @@
 * Trims away the outer bounding box to -p pixels
   
 ```python3 cropandwarp.py -i 01_input -o 02_cropped -p 50```
+
+Example input
+![test_6](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/dc01fa42-8c42-4519-a49a-57b150287f82)
+
+Example output
+![test_6](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/4965983e-15bc-4e16-b80a-475d0e77f55c)
 
 ## Run prepare_template.py on a single file 
 OMR/OCR system for reading data from paper checkbox forms.
