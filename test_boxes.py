@@ -3,11 +3,25 @@ import cv2
 import json
 import argparse
 import numpy as np
+from pyzbar.pyzbar import decode
 
 def load_template(template_path):
     with open(template_path, 'r') as file:
         return json.load(file)
 
+def read_qr_code(image_path):
+    # Load the image
+    img = cv2.imread(image_path)
+    
+    # Decode the QR code
+    decoded_objects = decode(img)
+    
+    # Return the decoded data
+    qr_data = []
+    for obj in decoded_objects:
+        qr_data.append(obj.data.decode("utf-8"))
+    return qr_data
+    
 def assess_filled(image, checkboxes, threshold=127.5):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     results = []
@@ -36,43 +50,43 @@ def draw_boxes(image, checkboxes, threshold_results):
 
         # Draw the contour on the image
         contour_np = np.array(contour)
-        cv2.drawContours(image, [contour_np], -1, (0, 255, 0), 2)
+        color = (0, 255, 0) if threshold_result else (0, 0, 255)
+
+        # Draw the contour on the image with the determined color
+        cv2.drawContours(image, [contour_np], -1, color, 2)
 
         # Add text annotations
         if "intensity" not in checkbox:
             checkbox["intensity"] = 0  # Initialize intensity to zero if not already present
         intensity = checkbox["intensity"]
         position_text = f"Position: ({x}, {y})"
-        intensity_text = f"Intensity: {intensity:.2f}"
-        label_text = f"Label: {checkbox['label']}"
-        threshold_result_text = f"Threshold Result: {threshold_result}"
+        intensity_text = f"{intensity:.2f}"
+        label_text = f"{checkbox['label']+checkbox['subquestion']}"
+        threshold_result_text = f"{threshold_result}"
 
-        cv2.putText(image, position_text, (x, y - 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
-        cv2.putText(image, intensity_text, (x, y - 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
-        cv2.putText(image, label_text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
-        cv2.putText(image, threshold_result_text, (x, y + 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
-                       
+        #cv2.putText(image, position_text, (x, y - 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
+
+        #cv2.putText(image, threshold_result_text, (x+10, y + 35), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
+        cv2.putText(image, intensity_text, (x+10, y + 50), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
+        cv2.putText(image, label_text, (x+10, y + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
+                                       
 def process_image(image_path, template, output_dir, threshold):
     image_name = os.path.basename(image_path)
     image = cv2.imread(image_path)
-
-    # Adjust the template to fit the expected structure, and include subquestion and question_type
     checkboxes = []
     for item in template:
-        contour = item["contour"]
-        label = item["question"]  # Use the "question" field as the label
-        subquestion = item["subquestion"]
-        question_type = item["question_type"]
         checkboxes.append({
-            "contour": contour, 
-            "label": label,
-            "subquestion": subquestion,
-            "question_type": question_type
+            "contour": item["contour"], 
+            "label": item["question"],  # Use the "question" field as the label
+            "subquestion": item["subquestion"],
+            "question_type": item["question_type"]
         })
 
     threshold_results = [result["filled"] for result in assess_filled(image, checkboxes, threshold)]
 
-    # Compile results including label, intensity, subquestion, question_type, threshold_result, and used threshold
+    # Read QR code data
+    qr_data = read_qr_code(image_path)
+
     results = []
     for checkbox, threshold_result in zip(checkboxes, threshold_results):
         results.append({
@@ -80,17 +94,15 @@ def process_image(image_path, template, output_dir, threshold):
             "subquestion": checkbox["subquestion"],
             "question_type": checkbox["question_type"],
             "threshold_result": threshold_result,
-            "intensity": checkbox.get("intensity", 0),  # Use 0 if 'intensity' key doesn't exist
-            "used_threshold": threshold  # Include the used threshold value
-
-
+            "intensity": checkbox.get("intensity", 0),
+            "used_threshold": threshold,
+            "qr_data": qr_data  # Add the QR code data to each result
         })
 
     draw_boxes(image, checkboxes, threshold_results)
     annotated_image_path = os.path.join(output_dir, f"annotated_{image_name}")
     cv2.imwrite(annotated_image_path, image)
     return image_name, results
-
 
 def main():
     parser = argparse.ArgumentParser(description='Batch process images with a template.')

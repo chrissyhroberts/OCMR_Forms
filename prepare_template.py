@@ -195,7 +195,7 @@ def detect_checkboxes(image, output_image_path, template_path, min_area, max_are
             if M["m00"] != 0:
                 cX = int(M["m10"] / M["m00"])
                 cY = int(M["m01"] / M["m00"])
-                bbox_text = f"Centroid: ({cX}, {cY}), Area: {int(area)}"
+                bbox_text = f"{cX},{cY}|{int(area)}"
                 
                 # Annotate the centroid and area on the image
                 cv2.putText(image, bbox_text, (cX - 50, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
