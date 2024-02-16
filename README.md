@@ -56,10 +56,25 @@ At this stage you can edit the labels to match the questions in your form
 ```
 
 ## Run test_boxes.py on a folder of completed forms
-python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 180
+
+This will detect which boxes are filled and which are not. On the first run it will use an arbitrary cutoff
+
+```python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 180```
 
 ## Run gmm_threshold.py on a folder of completed forms
-python3 gmm_threshold.py -i 03_boxes_checked/all_results.json -o form_a_gmm
+This will scan through the data set and plot a gaussian mixed model to find a better cutoff. 
+It will also save a chart
+
+```python3 gmm_threshold.py -i 03_boxes_checked/all_results.json -o form_a_gmm```
+
+![form_a_gmm_gmm](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/a9596287-36a3-4123-a534-8f3cf00f25e2)
+
+Pick the new threshold and run `test_boxes.py` again with the optimised threshold. 
+You may want to shift it up or down for increased specificity (up) and sensitivity (down).
+Obviously, the threshold makes a big difference. 
+You might also want to go over any faint marks on the originals with a bingo marker
+
+
 
 
 
