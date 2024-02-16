@@ -23,8 +23,13 @@ options:
 *  -e EPSILON, --epsilon EPSILON - Epsilon value for contour approximation  
 *  -s SIDES [SIDES ...], --sides SIDES [SIDES ...]  
        Number of sides for the contour approximation (e.g., 3, 4, 6 for triangles, rectangles, and hexagons).  
-       
+ ![test_10](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/01c16338-dcaa-4dc1-a05a-e4c93921d59b)
+      
 ```python3 prepare_template.py -i 02_cropped/test_10.png -ma 10 -xa 1000000 -e 0.01 -f template -s 3 5 8 ```
+Creates a new annotated image
+
+![test_10_annotated](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/20d97758-4dc4-47ff-b21e-18628d36e5ca)
+
 
 Creates a new file `form_a_template.json`
 
