@@ -67,7 +67,7 @@ def draw_boxes(image, checkboxes, threshold_results):
         #cv2.putText(image, position_text, (x, y - 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
 
         #cv2.putText(image, threshold_result_text, (x+10, y + 35), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
-        cv2.putText(image, intensity_text, (x+10, y + 50), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
+        cv2.putText(image, intensity_text, (x+10, y + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
         cv2.putText(image, label_text, (x+10, y + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Black color
                                        
 def process_image(image_path, template, output_dir, threshold):
