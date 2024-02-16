@@ -62,7 +62,7 @@ At this stage you can edit the labels to match the questions in your form
 ]
 ```
 
-## Run test_boxes.py on a folder of completed forms
+## Run test_boxes.py on a folder of completed forms (first sweep)
 
 This will detect which boxes are filled and which are not. On the first run it will use an arbitrary cutoff
 
@@ -76,10 +76,17 @@ It will also save a chart
 
 ![form_a_gmm_gmm](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/a9596287-36a3-4123-a534-8f3cf00f25e2)
 
+## Run test_boxes.py on a folder of completed forms (second sweep)
+
 Pick the new threshold and run `test_boxes.py` again with the optimised threshold. 
+
+```python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 221```
+
 You may want to shift it up or down for increased specificity (up) and sensitivity (down).
 Obviously, the threshold makes a big difference. 
 You might also want to go over any faint marks on the originals with a bingo marker
+
+![annotated_test_10](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/6c9c152d-5f27-417c-b198-5bc3b9fa2ec8)
 
 
 
