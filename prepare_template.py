@@ -189,21 +189,32 @@ def detect_checkboxes(image, output_image_path, template_path, min_area, max_are
         area = cv2.contourArea(approx)
         if len(approx) in sides and min_area < area < max_area:  # Check if sides count is in the list
             cv2.drawContours(image, [approx], -1, (0, 255, 0), 2)
+            
+            # Calculate the centroid of the contour
+            M = cv2.moments(contour)
+            if M["m00"] != 0:
+                cX = int(M["m10"] / M["m00"])
+                cY = int(M["m01"] / M["m00"])
+                bbox_text = f"Centroid: ({cX}, {cY}), Area: {int(area)}"
+                
+                # Annotate the centroid and area on the image
+                cv2.putText(image, bbox_text, (cX - 50, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+            else:
+                # Handle the case where the contour is a line or a point with no area (to avoid division by zero)
+                pass
+
             # Convert contour to list of points
             contour_points = approx.squeeze().tolist()
-
-            # Calculate the bounding box for the checkbox for annotation purposes
-            x, y, w, h = cv2.boundingRect(approx)
-            bbox_text = f"({x}, {y}), W:{w}, H:{h}"
             
-            # Draw the bounding box coordinates on the image
-            cv2.putText(image, bbox_text, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
             # Ensure "label" comes before "contour" in the dictionary
             checkboxes.append({
                 "question": "Q_",  # Placeholder values
                 "subquestion": "a",
                 "question_type": "select_multiple",
+                "centroid_x":cX,
+                "centroid_y":cY,
+                "area":int(area),
                 "contour": contour_points  # Convert numpy array to list
             })
 
