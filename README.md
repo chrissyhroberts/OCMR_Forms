@@ -1,5 +1,6 @@
 # OCMR_Forms
 
+
 ## Run cropandwarp.py on contents of input folder
 * Detects the outer bounding box (frame) 
 * Crops image to the outer bounding box
@@ -7,6 +8,12 @@
 * Trims away the outer bounding box to -p pixels
   
 ```python3 cropandwarp.py -i 01_input -o 02_cropped -p 50```
+
+Example input
+![test_6](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/dc01fa42-8c42-4519-a49a-57b150287f82)
+
+Example output
+![test_6](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/4965983e-15bc-4e16-b80a-475d0e77f55c)
 
 ## Run prepare_template.py on a single file 
 OMR/OCR system for reading data from paper checkbox forms.
@@ -54,4 +61,80 @@ At this stage you can edit the labels to match the questions in your form
 {"question": "Q_03", "subquestion": "a", "question_type": "select_multiple", "centroid_x": 494, "centroid_y": 408, "area": 138524, "contour": [[401, 222], [272, 331], [272, 487], [402, 596], [590, 595], [718, 487], [718, 331], [589, 222]]}
 ]
 ```
+
+## Run test_boxes.py on a folder of completed forms (first sweep)
+
+This will detect which boxes are filled and which are not. On the first run it will use an arbitrary cutoff
+
+```python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 180```
+
+## Run gmm_threshold.py on a folder of completed forms
+This will scan through the data set and plot a gaussian mixed model to find a better cutoff. 
+It will also save a chart
+
+```python3 gmm_threshold.py -i 03_boxes_checked/all_results.json -o form_a_gmm```
+
+![form_a_gmm_gmm](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/a9596287-36a3-4123-a534-8f3cf00f25e2)
+
+## Run test_boxes.py on a folder of completed forms (second sweep)
+
+Pick the new threshold and run `test_boxes.py` again with the optimised threshold. 
+
+```python3 test_boxes.py -i 02_cropped -tm form_a_template.json -o 03_boxes_checked -t 221```
+
+You may want to shift it up or down for increased specificity (up) and sensitivity (down).
+Obviously, the threshold makes a big difference. 
+You might also want to go over any faint marks on the originals with a bingo marker
+
+![annotated_test_10](https://github.com/chrissyhroberts/OCMR_Forms/assets/31275801/6c9c152d-5f27-417c-b198-5bc3b9fa2ec8)
+
+Results saved to `all_results.json`
+
 ```
+{
+    "test_10_annotated.png": [
+        {
+            "question": "Q_1",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 145.8055777650866,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 211.12559139784946,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 173.11989655172414,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 241.27943121693124,
+            "used_threshold": 180.0
+        },
+        {
+            "question": "Q_3",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 249.0724235645041,
+            "used_threshold": 180.0
+        }
+    ]
+```
+
+
+
