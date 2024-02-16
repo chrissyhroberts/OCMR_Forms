@@ -179,8 +179,6 @@ def detect_checkboxes(image, output_image_path, template_path, min_area, max_are
     contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     checkboxes = []
-    min_area = min_area  # Minimum area of a checkbox
-    max_area = max_area  # Maximum area of a checkbox
 
     for contour in contours:
         # Approximate the contour to a polygon
@@ -193,11 +191,19 @@ def detect_checkboxes(image, output_image_path, template_path, min_area, max_are
             cv2.drawContours(image, [approx], -1, (0, 255, 0), 2)
             # Convert contour to list of points
             contour_points = approx.squeeze().tolist()
+
+            # Calculate the bounding box for the checkbox for annotation purposes
+            x, y, w, h = cv2.boundingRect(approx)
+            bbox_text = f"({x}, {y}), W:{w}, H:{h}"
+            
+            # Draw the bounding box coordinates on the image
+            cv2.putText(image, bbox_text, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
             # Ensure "label" comes before "contour" in the dictionary
             checkboxes.append({
-                "question": "Q_",  # Label comes first
-                "subquestion": "a",  # Label comes first
-                "question_type": "select_multiple",  # Label comes first
+                "question": "Q_",  # Placeholder values
+                "subquestion": "a",
+                "question_type": "select_multiple",
                 "contour": contour_points  # Convert numpy array to list
             })
 
@@ -215,6 +221,7 @@ def detect_checkboxes(image, output_image_path, template_path, min_area, max_are
     # Write the custom-formatted string to the file
     with open(template_path, 'w') as f:
         f.write(json_string)
+
 ########################################################################################################
 # detect_checked_boxes 
 #
