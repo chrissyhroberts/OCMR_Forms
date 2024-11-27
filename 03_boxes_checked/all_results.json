@@ -1,1046 +1,1368 @@
 {
     "test_10.png": [
         {
-            "question": "Q_",
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_5",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 247.45757575757577,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_4",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_3",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 255.0,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 254.99999999999997,
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 254.99999999999997,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.0,
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 247.36060606060607,
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "Ww"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 247.3939393939394,
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 246.11458333333334,
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "/"
         },
         {
-            "question": "Q_",
+            "question": "Q_2",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 251.78619528619527,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "Sf"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.0,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.00000000000003,
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.00000000000003,
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.00000000000003,
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.00000000000003,
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_1",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 255.00000000000003,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         }
     ],
     "form_a_annotated.png": [
         {
-            "question": "Q_",
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 95.82902298850574,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 95.80316091954023,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 92.72988505747126,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 212.82537878787878,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 214.09869402985075,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 213.8278409090909,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_5",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 212.2340909090909,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_4",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 210.82708333333332,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_3",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 210.6884328358209,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 210.02487841376728,
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "pe"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 211.16142910587354,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "i"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.30246212121213,
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "pas"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.27386363636364,
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ps"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.71988636363636,
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.4625,
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_2",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 209.26730265619153,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "i |"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.1723484848485,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "pas"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 221.07870370370372,
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 220.68087121212122,
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 219.05523989898992,
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 219.23243933588762,
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_1",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 218.8992656449553,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         }
     ],
     "form_a.png": [
         {
-            "question": "Q_",
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 89.37068965517241,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 93.80028735632183,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 92.43103448275862,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 230.22291666666666,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.11660447761193,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.2219696969697,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.49924242424242,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.4746212121212,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 229.67164179104478,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 230.84811073699962,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.1575009352787,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.27348484848486,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
+            "question": "Q_5",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 229.50378787878788,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_4",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 230.09261363636364,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 230.00435606060606,
-            "used_threshold": 230.0,
-            "qr_data": [
-                "QP1023_01_P|Week_001|2024-01|03"
-            ]
-        },
-        {
-            "question": "Q_",
+            "question": "Q_3",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 229.943696221474,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ";"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "a",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "| >"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "pt"
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "ia"
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "a",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        }
+    ],
+    "form_a_filled.jpg": [
+        {
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 229.8806818181818,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 232.73866538952748,
+            "threshold_result": true,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 232.4124053030303,
+            "threshold_result": true,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 232.26815025252526,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
-            "threshold_result": false,
-            "intensity": 233.07822477650066,
+            "threshold_result": true,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": false,
-            "intensity": 232.20370370370372,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": [
                 "QP1023_01_P|Week_001|2024-01|03"
             ]
+        },
+        {
+            "question": "Q_5",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ]
+        },
+        {
+            "question": "Q_4",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": false,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ]
+        },
+        {
+            "question": "Q_3",
+            "subquestion": "a",
+            "question_type": "select_multiple",
+            "threshold_result": true,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ]
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ";"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "p"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "a",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "| > |"
+        },
+        {
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "pt"
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": "ia"
+        },
+        {
+            "question": "Q_1",
+            "subquestion": "a",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
+            "used_threshold": 230.0,
+            "qr_data": [
+                "QP1023_01_P|Week_001|2024-01|03"
+            ],
+            "ocr_text": ""
         }
     ],
     "test_5.jpg": [
         {
-            "question": "Q_",
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 164.94252873563218,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 168.9971264367816,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 174.91379310344828,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 201.73731060606062,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 203.67126865671642,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 204.95037878787878,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_5",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 205.73125,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_4",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 202.29886363636365,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_3",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 210.6242537313433,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 205.7946127946128,
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.09988776655442,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ae\nhat"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 214.54848484848486,
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "aig"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 206.2717803030303,
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 209.1414772727273,
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 206.6780303030303,
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_2",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 204.38477366255142,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "&\nss\nss"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 201.92897727272728,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ae\nae,"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 209.75542784163474,
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ves"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 208.13573232323233,
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 205.68481691919195,
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 203.1896551724138,
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_1",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 199.95545977011494,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         }
     ],
     "test_6.jpg": [
         {
-            "question": "Q_",
+            "question": "Q_11",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 195.98563218390805,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_10",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 193.9310344827586,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_9",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 196.33908045977012,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_8",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 205.57215909090908,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_7",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 204.4339552238806,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_6",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 202.2590909090909,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_5",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 199.41003787878788,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_4",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 196.51363636363635,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
+            "question": "Q_3",
             "subquestion": "a",
             "question_type": "select_multiple",
             "threshold_result": true,
-            "intensity": 202.43152985074627,
+            "intensity": 0,
             "used_threshold": 230.0,
             "qr_data": []
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 189.3808454919566,
+            "question": "Q_2",
+            "subquestion": "g",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 197.21623643845865,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ae"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 197.92405303030304,
+            "question": "Q_2",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "poe"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 189.8971590909091,
+            "question": "Q_2",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 195.73712121212122,
+            "question": "Q_2",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 194.31647727272727,
+            "question": "Q_2",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
+            "question": "Q_2",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 192.80265619154508,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 191.4287878787879,
+            "question": "Q_2",
+            "subquestion": "f",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "el"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 190.65628991060026,
+            "question": "Q_1",
+            "subquestion": "e",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": ""
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 190.09927398989902,
+            "question": "Q_1",
+            "subquestion": "d",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "="
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 189.104797979798,
+            "question": "Q_1",
+            "subquestion": "c",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ae\n21 i :"
         },
         {
-            "question": "Q_",
-            "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 187.94731800766286,
+            "question": "Q_1",
+            "subquestion": "b",
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "ee"
         },
         {
-            "question": "Q_",
+            "question": "Q_1",
             "subquestion": "a",
-            "question_type": "select_multiple",
-            "threshold_result": true,
-            "intensity": 185.51213282247767,
+            "question_type": "text",
+            "threshold_result": null,
+            "intensity": 0,
             "used_threshold": 230.0,
-            "qr_data": []
+            "qr_data": [],
+            "ocr_text": "a"
         }
     ]
 }

@@ -4,6 +4,7 @@ import json
 import argparse
 import numpy as np
 from pyzbar.pyzbar import decode
+import pytesseract
 
 def load_template(template_path):
     with open(template_path, 'r') as file:
@@ -21,25 +22,46 @@ def read_qr_code(image_path):
     for obj in decoded_objects:
         qr_data.append(obj.data.decode("utf-8"))
     return qr_data
+
+def preprocess_for_ocr(roi):
+    # Check if the image is already grayscale
+    if len(roi.shape) == 2:
+        # Image is already grayscale
+        gray = roi
+    else:
+        # Convert to grayscale
+        gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
     
+    # Apply Gaussian blur to reduce noise
+    blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+    
+    # Binarize the image using Otsu's thresholding
+    _, binary = cv2.threshold(blurred, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    
+    return binary
+       
 def assess_filled(image, checkboxes, threshold=127.5):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     results = []
     for checkbox in checkboxes:
         contour = checkbox["contour"]
-        contour = np.array(contour)  # Convert contour to NumPy array
-        x, y, w, h = cv2.boundingRect(contour)
+        contour_np = np.array(contour, dtype=np.int32)  # Ensure contour is an integer array
+        x, y, w, h = cv2.boundingRect(contour_np)
         roi = gray[y:y+h, x:x+w]
-        mean_intensity = cv2.mean(roi)[0]
-        print(f"Checkbox contour: {contour}")
-        print(f"Bounding box (x, y, w, h): ({x}, {y}, {w}, {h})")
-        print(f"Mean intensity: {mean_intensity}")
-        filled = mean_intensity < threshold
-        print(f"filled: {filled}")
-        checkbox["intensity"] = mean_intensity  # Assign 'intensity' directly to the checkbox dictionary
-        results.append({"bbox": [x, y, w, h], "filled": filled, "intensity": mean_intensity})
-    return results
 
+        if checkbox["question_type"] == "select_multiple":
+            # Process for "select_multiple" using intensity
+            mean_intensity = cv2.mean(roi)[0]
+            filled = mean_intensity < threshold
+            results.append({"bbox": [x, y, w, h], "filled": filled, "intensity": mean_intensity})
+        elif checkbox["question_type"] in ["text", "numbers"]:
+            # Perform OCR for "text" and "numbers"
+            roi_preprocessed = preprocess_for_ocr(roi)
+            ocr_result = pytesseract.image_to_string(roi_preprocessed, config='--psm 6')
+            results.append({"bbox": [x, y, w, h], "ocr_text": ocr_result.strip()})
+
+    return results
+    
 def draw_boxes(image, checkboxes, threshold_results):
     for checkbox, threshold_result in zip(checkboxes, threshold_results):
         contour = checkbox["contour"]
@@ -82,22 +104,37 @@ def process_image(image_path, template, output_dir, threshold):
             "question_type": item["question_type"]
         })
 
-    threshold_results = [result["filled"] for result in assess_filled(image, checkboxes, threshold)]
+    # Assess checkboxes or perform OCR based on question type
+    assessment_results = assess_filled(image, checkboxes, threshold)
 
-    # Read QR code data
+    # Initialize an empty list for threshold results
+    threshold_results = []
+
+    # Process each result to handle 'filled' or 'ocr_text'
+    for result in assessment_results:
+        if "filled" in result:
+            threshold_results.append(result["filled"])
+        else:
+            # For OCR results, decide how you want to handle them
+            # For example, you might consider any non-empty OCR result as 'True'
+            threshold_results.append(bool(result.get("ocr_text")))
+
     qr_data = read_qr_code(image_path)
 
     results = []
-    for checkbox, threshold_result in zip(checkboxes, threshold_results):
-        results.append({
+    for checkbox, threshold_result in zip(checkboxes, assessment_results):
+        result_entry = {
             "question": checkbox["label"], 
             "subquestion": checkbox["subquestion"],
             "question_type": checkbox["question_type"],
-            "threshold_result": threshold_result,
+            "threshold_result": threshold_result.get("filled", None),  # Use 'None' or an appropriate default
             "intensity": checkbox.get("intensity", 0),
             "used_threshold": threshold,
             "qr_data": qr_data  # Add the QR code data to each result
-        })
+        }
+        if "ocr_text" in threshold_result:
+            result_entry["ocr_text"] = threshold_result["ocr_text"]
+        results.append(result_entry)
 
     draw_boxes(image, checkboxes, threshold_results)
     annotated_image_path = os.path.join(output_dir, f"annotated_{image_name}")
